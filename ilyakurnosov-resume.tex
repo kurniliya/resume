@@ -1,0 +1,103 @@
+%-----------------------------------------
+% Ilya Kurnosov
+% Resumé
+%
+% URL: http://github.com/kurniliya/resume
+% This document is covered under the Creative Commons Attribution 3.0 Unported License
+%-----------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[14pt,a4paper,final]{moderncv}
+\moderncvtheme[burgundy]{classic}
+\moderncvicons{awesome}
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\settowidth{\hintscolumnwidth}{Abc 1234 -- Cde 5678}
+\AtBeginDocument{\recomputelengths}
+
+% FONTS
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{FiraSans}
+
+% SYMBOLS
+\newcommand*\skypephonesymbol{{\small\faSkype}~}
+
+% Personal Information 
+\firstname{Ilya}
+\familyname{Kurnosov}
+\phone[mobile]{+7 (926) 550-3712}
+\phone[skype]{i.kurnosov}
+\email{kurniliya@gmail.com}
+\social[linkedin]{ilyakurnosov}
+\social[twitter]{kurniliya}
+\social[github]{kurniliya}
+
+\begin{document}
+
+\maketitle
+
+\section{Experience} 
+  \cventry{Aug~2015 -- Present}{Senior Test and QA Analyst}{Deutsche Bank}{Moscow, Russia}{}{
+    Autotesting of server side components of the bank's Rapid FX trading platform (Linux OS, C++, Java, kdb+):
+    \begin{itemize}
+      \item Development of in-house test automation framework (Java, Spring, Python).
+      \item Maintenance and expansion of automated test library.
+    \end{itemize}
+  }
+  \cventry{Mar~2014 -- Aug~2015}{Senior SQA Engineer}{Align Technology}{Moscow, Russia}{}{
+    Testing of software for iTero intraoral scanners (Windows 8, Visual C++, C\#, WPF, SQLite):
+    \begin{itemize}
+      \item Worked as part of Scrum-But project team developing next generation of company's intraoral scanners (iTero Element).
+      \item Together with the team's another Sr. SQA engineer owned all the SQA aspects in the team: effort estimation,
+          test design and execution, preparation of reports for management, etc.
+      \item Participated in the team's code reviews (Visual C++, Python).
+      \item Defined and implemented from scratch an approach and framework for functional test automation
+          (Python, PyUnit, nose) leveraging API exposed by the product (ZeroMQ, Protocol Buffers).
+    \end{itemize}
+  }
+  \cventry{Apr~2010 -- Feb~2014}{Senior Test Automation Engineer}{Epicor Software Corp}{Moscow, Russia}{}{
+    Maintenance of iScala Automation Tool (Visual Basic 6, Visual C++, COM, ADO) and other supporting homegrown tools (VB6, C\#, PowerShell):
+    \begin{itemize}
+      \item Development of patches for troubles reported by autotest engineers and external customers.
+      \item Development of new features requested by autotest engineers.
+      \item Coordination with iScala platform team.
+      \item Development of various internal reports to support autotest team's operations.
+    \end{itemize}
+    Autotesting of Epicor iScala ERP product (Windows OS/MS SQL Server DB/VB6, VC++, COM+) using homegrown automation tools:
+    \begin{itemize}
+      \item Maintenance of operational regression script library.
+      \item Development of new automated test scripts for product's new features.
+      \item Analysis of existing automated test scripts.
+      \item Preparation of test environments.
+      \item Analysis of test execution results.
+      \item Hardware planning for test automation effort.
+    \end{itemize}
+    Autotesting of Epicor iScala integration with MS Dynamics CRM 4 using Rational Robot.
+  }
+  \cventry{Nov~2007 -- Mar~2010}{Software Test Engineer}{CBOSS}{Moscow, Russia}{}{
+    Testing of CBOSS 4 billing \& CRM product (Oracle 10g DB/PL SQL/Oracle Forms/Java):
+    \begin{itemize}
+      \item Testing of product's new features (development of test scenarios and test cases, execution of the tests).
+      \item Execution of regression tests for the product based on existing scenarios.
+      \item Maintenance of regression scenarios.
+      \item Load and performance testing.
+    \end{itemize}
+  }
+  \cventry{Apr~2007 -- Oct~2007}{Engineer at Department of Applied Mathematics}{Moscow Engineering Physics Institute}{Moscow, Russia}{}{
+    Research in numerical and analytical methods of solution of partial differential equations.
+  }
+
+\section{Languages}
+\cvlanguage{English}{Fluent}{}
+\cvlanguage{Russian}{Native}{}
+
+\section{Education}
+\cventry{2003 -- 2011}{Applied mathematics and computer science}{Moscow Engineering Physics Institute}{Moscow, Russia}{Master's degree}{}
+
+\section{Extra}
+  \cvlistitem{Contributor to open source projects -- see \url{https://github.com/kurnili}.}
+
+\end{document}
